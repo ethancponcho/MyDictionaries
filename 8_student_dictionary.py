@@ -6,6 +6,7 @@ student = {"name": 'Ethan Poncho',
 student['state'] = 'Texas'
 student['age'] = '22'
 
-for key in student:
-    print(f"Name: {student['name']}\n Age: {student['age']}\n Major: {student['major']}\n Hobbies: {student['hobbies']}\n State of Residence: {student[state]}")
+for k, v in student.items():
+    print(f'{k}: {v}')
+#print(f"Name: {student['name']}\nAge: {student['age']}\nMajor: {student['major']}\nHobbies: {student['hobbies']}\nState of Residence: {student['state']}")
     

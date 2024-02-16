@@ -207,3 +207,9 @@ ProduceDictionary={
     }
 }
 
+for k in ProduceDictionary:
+    calc_total = ProduceDictionary[k]['cost'] * ProduceDictionary[k]['amt_sold']
+    stated_total = ProduceDictionary[k]['total']
+    if stated_total != calc_total:
+        print(f"produce name: {k}\nCalculated total: ${calc_total:.2f}\nStated Total: ${ProduceDictionary[k]['total']}\n")
+        
